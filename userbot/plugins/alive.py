@@ -45,7 +45,7 @@ async def amireallyalive(alive):
             f"<b>{EMOJI} Catuserbot Version :</b> <code>{catversion}</code>\n"
         )
         cat_caption += f"<b>{EMOJI} Database :</b> <code>{check_sgnirts}</code>\n\n"
-        cat_caption += "    <a href = https://github.com/sandy1709/catuserbot><b>GoodCat</b></a> | <a href = https://github.com/Jisan09/catuserbot><b>BadCat</b></a> | <a href = https://t.me/catuserbot_support><b>Support</b></a>"
+        cat_caption += "    <a href = https://github.com/klanrali/iraq.thon><b>GoodCat</b></a> | <a href = https://github.com/klanrali/iraq.thon><b>BadCat</b></a> | <a href = https://t.me/catuserbot_support><b>Support</b></a>"
         await borg.send_file(
             alive.chat_id,
             CAT_IMG,
@@ -65,7 +65,8 @@ async def amireallyalive(alive):
             f"**{EMOJI} Telethon Version :** `{version.__version__}\n`"
             f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
             f"**{EMOJI} Database :** `{check_sgnirts}`\n\n"
-            "   **[GoodCat]**(https://github.com/sandy1709/catuserbot) | **[BadCat]**(https://github.com/Jisan09/catuserbot) | **[Support]**(https://t.me/catuserbot_support) ",
+            f"**{EMOJI} dav :** `@aaada`\n\n"
+            "   **[iraqthon]**(https://github.com/klanrali/iraq.thon) | **[iraqthon]**(https://github.com/klanrali/iraq.thon) | **[Support]**(https://t.me/tele_thon) ",
         )
 
 
@@ -84,6 +85,7 @@ async def amireallyalive(alive):
     cat_caption += f"**  -Catuserbot Version :** `{catversion}`\n"
     cat_caption += f"**  -Python Version :** `{python_version()}\n`"
     cat_caption += f"**  -My peru Master:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
+    cat_caption += f"**  -My Dav @aaaDa \n"
     results = await bot.inline_query(tgbotusername, cat_caption)  # pylint:disable=E0602
     await results[0].click(alive.chat_id, reply_to=reply_to_id, hide_via=True)
     await alive.delete()
